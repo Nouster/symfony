@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Game details{% endblock %}
+
+{% block body %}
+<h2 class="text-center my-5">Game Info</h2>
+<section class="container my-5">
+<div class="row justify-content-center align-items-center">
+ <div class="col-md-6 border bg-dark text-light rounded-3">
+        <h4 class="text-center">{{ game.name }}</h4>
+        <img class="img-fluid rounded-3" src="https://img.phonandroid.com/2019/04/psn-pseudo-changer.jpg" alt="">
+        <p class= "p-3">
+            {{ game.description }}
+        </p>
+    </div>
+</div>
+</section>
+{% endblock %}

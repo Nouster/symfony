@@ -6,13 +6,10 @@
 <h2 class= "text-center my-5"> My games </h2>
 <section class="container my-5">
 <div class="row gap-3 justify-content-center">
-{% for game in games %}
+{% for store in store %}
     <div class="col-md-3 border bg-dark text-light rounded-3">
-        <h4 class="text-center">{{ game.name }}</h4>
-        <a href="{{path('game_item', { id: game.id }) }}"><img class="img-fluid rounded-3" src="https://img.phonandroid.com/2019/04/psn-pseudo-changer.jpg" alt=""></a>
-        <p class= "p-3">
-            {{ game.description }}
-        </p>
+        <h4 class="text-center">{{ store.name }}</h4>
+        <img class="img-fluid" src="{{ store.imageUrl }}" alt="">
     </div>
 {% endfor %}
 </div>
